@@ -30,7 +30,7 @@ namespace Windows.UI.Xaml.Media
 		}
 
 		public static readonly DependencyProperty CenterYProperty =
-			DependencyProperty.Register("CenterY", typeof(double), typeof(ScaleTransform), new PropertyMetadata(0.0, NotifyChangedCallback));
+			DependencyProperty.Register("CenterY", typeof(double), typeof(ScaleTransform), new FrameworkPropertyMetadata(0.0, NotifyChangedCallback));
 
 		public double CenterX
 		{
@@ -39,7 +39,7 @@ namespace Windows.UI.Xaml.Media
 		}
 
 		public static readonly DependencyProperty CenterXProperty =
-			DependencyProperty.Register("CenterX", typeof(double), typeof(ScaleTransform), new PropertyMetadata(0.0, NotifyChangedCallback));
+			DependencyProperty.Register("CenterX", typeof(double), typeof(ScaleTransform), new FrameworkPropertyMetadata(0.0, NotifyChangedCallback));
 
 		public double ScaleX
 		{
@@ -48,7 +48,7 @@ namespace Windows.UI.Xaml.Media
 		}
 
 		public static readonly DependencyProperty ScaleXProperty =
-			DependencyProperty.Register("ScaleX", typeof(double), typeof(ScaleTransform), new PropertyMetadata(1.0, NotifyChangedCallback));
+			DependencyProperty.Register("ScaleX", typeof(double), typeof(ScaleTransform), new FrameworkPropertyMetadata(1.0, NotifyChangedCallback));
 
 		public double ScaleY
 		{
@@ -57,6 +57,6 @@ namespace Windows.UI.Xaml.Media
 		}
 
 		public static readonly DependencyProperty ScaleYProperty =
-			DependencyProperty.Register("ScaleY", typeof(double), typeof(ScaleTransform), new PropertyMetadata(1.0, NotifyChangedCallback));
+			DependencyProperty.Register("ScaleY", typeof(double), typeof(ScaleTransform), new FrameworkPropertyMetadata(1.0, NotifyChangedCallback));
 	}
 }

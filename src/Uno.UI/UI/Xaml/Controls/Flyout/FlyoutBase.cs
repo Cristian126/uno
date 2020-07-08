@@ -158,7 +158,7 @@ namespace Windows.UI.Xaml.Controls.Primitives
 		}
 
 		internal static readonly DependencyProperty LightDismissOverlayBackgroundProperty =
-			DependencyProperty.Register("LightDismissOverlayBackground", typeof(Brush), typeof(FlyoutBase), new PropertyMetadata(null));
+			DependencyProperty.Register("LightDismissOverlayBackground", typeof(Brush), typeof(FlyoutBase), new FrameworkPropertyMetadata(null));
 
 		public FrameworkElement Target { get; private set; }
 

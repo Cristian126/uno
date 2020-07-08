@@ -68,7 +68,7 @@ namespace Uno.UI.Samples.Content.UITests.ContentControlTestsControl
 
 		// Using a DependencyProperty as the backing store for MyContent.  This enables animation, styling, binding, etc...
 		public static readonly DependencyProperty MyContentProperty =
-			DependencyProperty.Register("MyContent", typeof(MyNestedContent), typeof(ContentControl_Nested_TemplatedParent), new PropertyMetadata(null));
+			DependencyProperty.Register("MyContent", typeof(MyNestedContent), typeof(ContentControl_Nested_TemplatedParent), new FrameworkPropertyMetadata(null));
 	}
 
 	public partial class MyNestedContent : DependencyObject
@@ -81,6 +81,6 @@ namespace Uno.UI.Samples.Content.UITests.ContentControlTestsControl
 
 		// Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
 		public static readonly DependencyProperty MyPropertyProperty =
-			DependencyProperty.Register("MyProperty", typeof(int), typeof(MyNestedContent), new PropertyMetadata(0));
+			DependencyProperty.Register("MyProperty", typeof(int), typeof(MyNestedContent), new FrameworkPropertyMetadata(0));
 	}
 }

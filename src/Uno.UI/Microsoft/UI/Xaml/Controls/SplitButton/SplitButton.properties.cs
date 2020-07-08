@@ -30,13 +30,13 @@ namespace Microsoft.UI.Xaml.Controls
 		}		
 		
 		public static readonly DependencyProperty CommandProperty =
-			DependencyProperty.Register(nameof(Command), typeof(ICommand), typeof(SplitButton), new PropertyMetadata(null, OnCommandChanged));
+			DependencyProperty.Register(nameof(Command), typeof(ICommand), typeof(SplitButton), new FrameworkPropertyMetadata(null, OnCommandChanged));
 
 		public static readonly DependencyProperty CommandParameterProperty =
-			DependencyProperty.Register(nameof(CommandParameter), typeof(object), typeof(SplitButton), new PropertyMetadata(null, OnCommandParameterChanged));
+			DependencyProperty.Register(nameof(CommandParameter), typeof(object), typeof(SplitButton), new FrameworkPropertyMetadata(null, OnCommandParameterChanged));
 
 		public static readonly DependencyProperty FlyoutProperty =
-			DependencyProperty.Register(nameof(Flyout), typeof(FlyoutBase), typeof(SplitButton), new PropertyMetadata(null, OnFlyoutChanged));
+			DependencyProperty.Register(nameof(Flyout), typeof(FlyoutBase), typeof(SplitButton), new FrameworkPropertyMetadata(null, OnFlyoutChanged));
 
 		private static void OnCommandChanged(DependencyObject sender, DependencyPropertyChangedEventArgs args)
 		{

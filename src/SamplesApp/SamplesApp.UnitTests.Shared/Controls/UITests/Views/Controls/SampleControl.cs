@@ -38,7 +38,7 @@ namespace Uno.UI.Samples.Controls
 		}
 
 		public static readonly DependencyProperty SampleDescriptionProperty =
-			DependencyProperty.Register("SampleDescription", typeof(string), typeof(SampleControl), new PropertyMetadata(""));
+			DependencyProperty.Register("SampleDescription", typeof(string), typeof(SampleControl), new FrameworkPropertyMetadata(""));
 		
 		// This only exists as a proxy to ContentTemplate
 		public DataTemplate SampleContent
@@ -48,7 +48,7 @@ namespace Uno.UI.Samples.Controls
 		}
 
 		public static readonly DependencyProperty SampleContentProperty =
-			DependencyProperty.Register("SampleContent", typeof(DataTemplate), typeof(SampleControl), new PropertyMetadata(null, OnSampleContentChanged));
+			DependencyProperty.Register("SampleContent", typeof(DataTemplate), typeof(SampleControl), new FrameworkPropertyMetadata(null, OnSampleContentChanged));
 
 		private static void OnSampleContentChanged(object dependencyObject, DependencyPropertyChangedEventArgs args)
 		{

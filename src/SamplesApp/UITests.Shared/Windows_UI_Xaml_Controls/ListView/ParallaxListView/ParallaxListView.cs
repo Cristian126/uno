@@ -39,7 +39,7 @@ namespace SamplesApp.Windows_UI_Xaml_Controls.ListView
 		}
 
 		public static readonly DependencyProperty ItemsSourceProperty =
-			DependencyProperty.Register("ItemsSource", typeof(object), typeof(ParallaxListView), new PropertyMetadata(null));
+			DependencyProperty.Register("ItemsSource", typeof(object), typeof(ParallaxListView), new FrameworkPropertyMetadata(null));
 
 		#endregion
 
@@ -52,7 +52,7 @@ namespace SamplesApp.Windows_UI_Xaml_Controls.ListView
 		}
 
 		public static readonly DependencyProperty ItemTemplateSelectorProperty =
-			DependencyProperty.Register("ItemTemplateSelector", typeof(DataTemplateSelector), typeof(ParallaxListView), new PropertyMetadata(null));
+			DependencyProperty.Register("ItemTemplateSelector", typeof(DataTemplateSelector), typeof(ParallaxListView), new FrameworkPropertyMetadata(null));
 
 		#endregion
 
@@ -65,7 +65,7 @@ namespace SamplesApp.Windows_UI_Xaml_Controls.ListView
 		}
 
 		public static readonly DependencyProperty ItemContainerStyleProperty =
-			DependencyProperty.Register("ItemContainerStyle", typeof(Style), typeof(ParallaxListView), new PropertyMetadata(null));
+			DependencyProperty.Register("ItemContainerStyle", typeof(Style), typeof(ParallaxListView), new FrameworkPropertyMetadata(null));
 
 		#endregion
 
@@ -78,7 +78,7 @@ namespace SamplesApp.Windows_UI_Xaml_Controls.ListView
 		}
 
 		public static readonly DependencyProperty ItemCommandProperty =
-			DependencyProperty.Register("ItemCommand", typeof(ICommand), typeof(ParallaxListView), new PropertyMetadata(null));
+			DependencyProperty.Register("ItemCommand", typeof(ICommand), typeof(ParallaxListView), new FrameworkPropertyMetadata(null));
 
 		#endregion
 
@@ -91,7 +91,7 @@ namespace SamplesApp.Windows_UI_Xaml_Controls.ListView
 		}
 
 		public static readonly DependencyProperty TitleProperty =
-			DependencyProperty.Register("Title", typeof(string), typeof(ParallaxListView), new PropertyMetadata(string.Empty));
+			DependencyProperty.Register("Title", typeof(string), typeof(ParallaxListView), new FrameworkPropertyMetadata(string.Empty));
 
 		#endregion
 
@@ -104,7 +104,7 @@ namespace SamplesApp.Windows_UI_Xaml_Controls.ListView
 		}
 
 		public static readonly DependencyProperty VisibleTitleProperty =
-			DependencyProperty.Register("VisibleTitle", typeof(string), typeof(ParallaxListView), new PropertyMetadata("  "));
+			DependencyProperty.Register("VisibleTitle", typeof(string), typeof(ParallaxListView), new FrameworkPropertyMetadata("  "));
 
 		#endregion
 
@@ -117,7 +117,7 @@ namespace SamplesApp.Windows_UI_Xaml_Controls.ListView
 		}
 
 		public static readonly DependencyProperty HeaderBackgroundImageProperty =
-			DependencyProperty.Register("HeaderBackgroundImage", typeof(string), typeof(ParallaxListView), new PropertyMetadata(string.Empty));
+			DependencyProperty.Register("HeaderBackgroundImage", typeof(string), typeof(ParallaxListView), new FrameworkPropertyMetadata(string.Empty));
 
 		#endregion
 
@@ -130,7 +130,7 @@ namespace SamplesApp.Windows_UI_Xaml_Controls.ListView
 		}
 
 		public static readonly DependencyProperty HeaderForegroundTemplateProperty =
-			DependencyProperty.Register("HeaderForegroundTemplate", typeof(DataTemplate), typeof(ParallaxListView), new PropertyMetadata(null));
+			DependencyProperty.Register("HeaderForegroundTemplate", typeof(DataTemplate), typeof(ParallaxListView), new FrameworkPropertyMetadata(null));
 
 		#endregion
 

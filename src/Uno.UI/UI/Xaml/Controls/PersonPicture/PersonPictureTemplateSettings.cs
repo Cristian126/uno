@@ -27,7 +27,7 @@ namespace Windows.UI.Xaml.Controls
 
 		// Using a DependencyProperty as the backing store for ActualImageBrush.  This enables animation, styling, binding, etc...
 		public static readonly DependencyProperty ActualImageBrushProperty =
-			DependencyProperty.Register("ActualImageBrush", typeof(ImageBrush), typeof(PersonPictureTemplateSettings), new PropertyMetadata(null));
+			DependencyProperty.Register("ActualImageBrush", typeof(ImageBrush), typeof(PersonPictureTemplateSettings), new FrameworkPropertyMetadata(null));
 
 
 
@@ -39,6 +39,6 @@ namespace Windows.UI.Xaml.Controls
 
 		// Using a DependencyProperty as the backing store for ActualInitials.  This enables animation, styling, binding, etc...
 		public static readonly DependencyProperty ActualInitialsProperty =
-			DependencyProperty.Register("ActualInitials", typeof(string), typeof(PersonPictureTemplateSettings), new PropertyMetadata(""));
+			DependencyProperty.Register("ActualInitials", typeof(string), typeof(PersonPictureTemplateSettings), new FrameworkPropertyMetadata(""));
 	}
 }

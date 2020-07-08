@@ -145,7 +145,7 @@ namespace Windows.UI.Xaml.Controls
 				"TextWrapping",
 				typeof(TextWrapping),
 				typeof(TextBlock),
-				new PropertyMetadata(
+				new FrameworkPropertyMetadata(
 					defaultValue: TextWrapping.NoWrap,
 					propertyChangedCallback: (s, e) => ((TextBlock)s).OnTextWrappingChanged()
 				)
@@ -312,7 +312,7 @@ namespace Windows.UI.Xaml.Controls
 				"MaxLines",
 				typeof(int),
 				typeof(TextBlock),
-				new PropertyMetadata(
+				new FrameworkPropertyMetadata(
 					defaultValue: 0,
 					propertyChangedCallback: (s, e) => ((TextBlock)s).OnMaxLinesChanged()
 				)
@@ -341,7 +341,7 @@ namespace Windows.UI.Xaml.Controls
 				"TextTrimming",
 				typeof(TextTrimming),
 				typeof(TextBlock),
-				new PropertyMetadata(
+				new FrameworkPropertyMetadata(
 					defaultValue: TextTrimming.None,
 					propertyChangedCallback: (s, e) => ((TextBlock)s).OnTextTrimmingChanged()
 				)
@@ -423,7 +423,7 @@ namespace Windows.UI.Xaml.Controls
 				"TextAlignment",
 				typeof(TextAlignment),
 				typeof(TextBlock),
-				new PropertyMetadata(
+				new FrameworkPropertyMetadata(
 					defaultValue: TextAlignment.Left,
 					propertyChangedCallback: (s, e) => ((TextBlock)s).OnTextAlignmentChanged()
 				)
@@ -478,7 +478,7 @@ namespace Windows.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty LineHeightProperty =
-			DependencyProperty.Register("LineHeight", typeof(double), typeof(TextBlock), new PropertyMetadata(0d,
+			DependencyProperty.Register("LineHeight", typeof(double), typeof(TextBlock), new FrameworkPropertyMetadata(0d,
 				propertyChangedCallback: (s, e) => ((TextBlock)s).OnLineHeightChanged())
 			);
 
@@ -501,7 +501,7 @@ namespace Windows.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty LineStackingStrategyProperty =
-			DependencyProperty.Register("LineStackingStrategy", typeof(LineStackingStrategy), typeof(TextBlock), new PropertyMetadata(LineStackingStrategy.MaxHeight,
+			DependencyProperty.Register("LineStackingStrategy", typeof(LineStackingStrategy), typeof(TextBlock), new FrameworkPropertyMetadata(LineStackingStrategy.MaxHeight,
 				propertyChangedCallback: (s, e) => ((TextBlock)s).OnLineStackingStrategyChanged())
 			);
 
@@ -528,7 +528,7 @@ namespace Windows.UI.Xaml.Controls
 				"Padding",
 				typeof(Thickness),
 				typeof(TextBlock),
-				new PropertyMetadata((Thickness)Thickness.Empty, propertyChangedCallback: (s, e) => ((TextBlock)s).OnPaddingChanged())
+				new FrameworkPropertyMetadata((Thickness)Thickness.Empty, propertyChangedCallback: (s, e) => ((TextBlock)s).OnPaddingChanged())
 			);
 
 		private void OnPaddingChanged()

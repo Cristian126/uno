@@ -420,7 +420,7 @@ namespace Windows.UI.Xaml.Controls
 		}
 
 		internal static readonly DependencyProperty LightDismissOverlayBackgroundProperty =
-			DependencyProperty.Register("LightDismissOverlayBackground", typeof(Brush), typeof(ComboBox), new PropertyMetadata(null));
+			DependencyProperty.Register("LightDismissOverlayBackground", typeof(Brush), typeof(ComboBox), new FrameworkPropertyMetadata(null));
 
 		private class DropDownLayouter : PopupBase.IDynamicPopupLayouter
 		{

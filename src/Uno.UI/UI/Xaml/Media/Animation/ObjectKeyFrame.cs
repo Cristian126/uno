@@ -21,7 +21,7 @@ namespace Windows.UI.Xaml.Media.Animation
 		
 		// Using a DependencyProperty as the backing store for KeyTime.  This enables animation, styling, binding, etc...
 		public static readonly DependencyProperty KeyTimeProperty =
-			DependencyProperty.Register("KeyTime", typeof(KeyTime), typeof(ObjectKeyFrame), new PropertyMetadata(null));
+			DependencyProperty.Register("KeyTime", typeof(KeyTime), typeof(ObjectKeyFrame), new FrameworkPropertyMetadata(null));
 		#endregion
 
 		#region Value Dependency Property
@@ -33,7 +33,7 @@ namespace Windows.UI.Xaml.Media.Animation
 
 		// Using a DependencyProperty as the backing store for Value.  This enables animation, styling, binding, etc...
 		public static readonly DependencyProperty ValueProperty =
-			DependencyProperty.Register("Value", typeof(object), typeof(ObjectKeyFrame), new PropertyMetadata(null));
+			DependencyProperty.Register("Value", typeof(object), typeof(ObjectKeyFrame), new FrameworkPropertyMetadata(null));
 		#endregion
 	}
 }

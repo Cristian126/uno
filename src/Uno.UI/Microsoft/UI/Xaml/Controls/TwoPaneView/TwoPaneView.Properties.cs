@@ -34,7 +34,7 @@ namespace Microsoft.UI.Xaml.Controls
 
 		// Using a DependencyProperty as the backing store for Pane1.  This enables animation, styling, binding, etc...
 		public static readonly DependencyProperty Pane1Property =
-			DependencyProperty.Register("Pane1", typeof(UIElement), typeof(TwoPaneView), new PropertyMetadata(null));
+			DependencyProperty.Register("Pane1", typeof(UIElement), typeof(TwoPaneView), new FrameworkPropertyMetadata(null));
 
 		public UIElement Pane2
 		{
@@ -43,7 +43,7 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty Pane2Property =
-			DependencyProperty.Register("Pane2", typeof(UIElement), typeof(TwoPaneView), new PropertyMetadata(null));
+			DependencyProperty.Register("Pane2", typeof(UIElement), typeof(TwoPaneView), new FrameworkPropertyMetadata(null));
 
 		public GridLength Pane1Length
 		{
@@ -56,7 +56,7 @@ namespace Microsoft.UI.Xaml.Controls
 				nameof(Pane1Length),
 				typeof(GridLength),
 				typeof(TwoPaneView),
-				new PropertyMetadata(c_pane1LengthDefault));
+				new FrameworkPropertyMetadata(c_pane1LengthDefault));
 
 
 
@@ -71,7 +71,7 @@ namespace Microsoft.UI.Xaml.Controls
 				"Pane2Length",
 				typeof(GridLength),
 				typeof(TwoPaneView),
-				new PropertyMetadata(c_pane2LengthDefault));
+				new FrameworkPropertyMetadata(c_pane2LengthDefault));
 
 		public TwoPaneViewPriority PanePriority
 		{
@@ -80,7 +80,7 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty PanePriorityProperty =
-			DependencyProperty.Register("PanePriority", typeof(TwoPaneViewPriority), typeof(TwoPaneView), new PropertyMetadata(TwoPaneViewPriority.Pane1));
+			DependencyProperty.Register("PanePriority", typeof(TwoPaneViewPriority), typeof(TwoPaneView), new FrameworkPropertyMetadata(TwoPaneViewPriority.Pane1));
 
 
 
@@ -95,7 +95,7 @@ namespace Microsoft.UI.Xaml.Controls
 				"Mode",
 				typeof(TwoPaneViewMode),
 				typeof(TwoPaneView),
-				new PropertyMetadata(TwoPaneViewMode.SinglePane));
+				new FrameworkPropertyMetadata(TwoPaneViewMode.SinglePane));
 
 
 
@@ -106,7 +106,7 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty WideModeConfigurationProperty =
-			DependencyProperty.Register("WideModeConfiguration", typeof(TwoPaneViewWideModeConfiguration), typeof(TwoPaneView), new PropertyMetadata(TwoPaneViewWideModeConfiguration.LeftRight));
+			DependencyProperty.Register("WideModeConfiguration", typeof(TwoPaneViewWideModeConfiguration), typeof(TwoPaneView), new FrameworkPropertyMetadata(TwoPaneViewWideModeConfiguration.LeftRight));
 
 
 
@@ -118,7 +118,7 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty TallModeConfigurationProperty =
-			DependencyProperty.Register("TallModeConfiguration", typeof(TwoPaneViewTallModeConfiguration), typeof(TwoPaneView), new PropertyMetadata(TwoPaneViewTallModeConfiguration.TopBottom));
+			DependencyProperty.Register("TallModeConfiguration", typeof(TwoPaneViewTallModeConfiguration), typeof(TwoPaneView), new FrameworkPropertyMetadata(TwoPaneViewTallModeConfiguration.TopBottom));
 
 
 
@@ -129,7 +129,7 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty MinWideModeWidthProperty =
-			DependencyProperty.Register("MinWideModeWidth", typeof(double), typeof(TwoPaneView), new PropertyMetadata(c_defaultMinWideModeWidth));
+			DependencyProperty.Register("MinWideModeWidth", typeof(double), typeof(TwoPaneView), new FrameworkPropertyMetadata(c_defaultMinWideModeWidth));
 
 
 
@@ -140,6 +140,6 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty MinTallModeHeightProperty =
-			DependencyProperty.Register("MinTallModeHeight", typeof(double), typeof(TwoPaneView), new PropertyMetadata(c_defaultMinTallModeHeight));
+			DependencyProperty.Register("MinTallModeHeight", typeof(double), typeof(TwoPaneView), new FrameworkPropertyMetadata(c_defaultMinTallModeHeight));
 	}
 }

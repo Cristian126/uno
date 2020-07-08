@@ -18,7 +18,7 @@ namespace Uno.UI.Samples.Content.UITests.WebView
 		}
 		
 		public static readonly DependencyProperty SourceUriProperty =
-			DependencyProperty.RegisterAttached("SourceUri", typeof(string), typeof(WebViewSampleBehavior), new PropertyMetadata("", OnSourceUriChanged));
+			DependencyProperty.RegisterAttached("SourceUri", typeof(string), typeof(WebViewSampleBehavior), new FrameworkPropertyMetadata("", OnSourceUriChanged));
 
 		private static void OnSourceUriChanged(object d, DependencyPropertyChangedEventArgs e)
 		{

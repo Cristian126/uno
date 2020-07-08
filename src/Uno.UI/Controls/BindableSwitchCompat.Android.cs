@@ -46,7 +46,7 @@ namespace Uno.UI.Controls
 		}
 
 		public static readonly DependencyProperty TextColorProperty =
-			DependencyProperty.Register("TextColor", typeof(Brush), typeof(BindableSwitchCompat), new PropertyMetadata(null, (s, e) => ((BindableSwitchCompat)s).OnTextColorChanged((Brush)e.NewValue)));
+			DependencyProperty.Register("TextColor", typeof(Brush), typeof(BindableSwitchCompat), new FrameworkPropertyMetadata(null, (s, e) => ((BindableSwitchCompat)s).OnTextColorChanged((Brush)e.NewValue)));
 
 		private void OnTextColorChanged(Brush newValue)
 		{
@@ -70,7 +70,7 @@ namespace Uno.UI.Controls
 		}
 
 		public static readonly DependencyProperty ThumbTintProperty =
-			DependencyProperty.Register("ThumbTint", typeof(Brush), typeof(BindableSwitchCompat), new PropertyMetadata(null, (s, e) => ((BindableSwitchCompat)s).OnThumbTintChanged((Brush)e.NewValue)));
+			DependencyProperty.Register("ThumbTint", typeof(Brush), typeof(BindableSwitchCompat), new FrameworkPropertyMetadata(null, (s, e) => ((BindableSwitchCompat)s).OnThumbTintChanged((Brush)e.NewValue)));
 
 		private void OnThumbTintChanged(Brush newValue)
 		{
@@ -100,7 +100,7 @@ namespace Uno.UI.Controls
 		}
 
 		public static readonly DependencyProperty TrackTintProperty =
-			DependencyProperty.Register("TrackTint", typeof(Brush), typeof(BindableSwitchCompat), new PropertyMetadata(null, (s, e) => ((BindableSwitchCompat)s).OnTrackTintChanged((Brush)e.NewValue)));
+			DependencyProperty.Register("TrackTint", typeof(Brush), typeof(BindableSwitchCompat), new FrameworkPropertyMetadata(null, (s, e) => ((BindableSwitchCompat)s).OnTrackTintChanged((Brush)e.NewValue)));
 
 		private void OnTrackTintChanged(Brush newValue)
 		{

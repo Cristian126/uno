@@ -16,7 +16,7 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty IsCheckedProperty =
-			DependencyProperty.Register(nameof(IsChecked), typeof(bool), typeof(ToggleSplitButton), new PropertyMetadata(false, OnIsCheckedPropertyChanged));
+			DependencyProperty.Register(nameof(IsChecked), typeof(bool), typeof(ToggleSplitButton), new FrameworkPropertyMetadata(false, OnIsCheckedPropertyChanged));
 
 		private static void OnIsCheckedPropertyChanged(
 			DependencyObject sender,

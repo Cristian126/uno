@@ -36,7 +36,7 @@ namespace Windows.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty HeaderProperty =
-			DependencyProperty.Register("Header", typeof(object), typeof(PivotItem), new PropertyMetadata(null));
+			DependencyProperty.Register("Header", typeof(object), typeof(PivotItem), new FrameworkPropertyMetadata(null));
 
 #if XAMARIN_ANDROID
 		// This allows the PivotItem to fill the whole available space.
