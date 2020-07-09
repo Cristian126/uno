@@ -421,7 +421,7 @@ namespace <#= mixin.NamespaceName #>
 
 		#region Style DependencyProperty
 
-		[GeneratedDependencyProperty(DefaultValue = null, ChangedCallback = true)]
+		[GeneratedDependencyProperty(DefaultValue = null, ChangedCallback = true, Options = FrameworkPropertyMetadataOptions.ValueDoesNotInheritDataContext)]
 		public static readonly DependencyProperty StyleProperty = CreateStyleProperty();
 
 		public Style Style
