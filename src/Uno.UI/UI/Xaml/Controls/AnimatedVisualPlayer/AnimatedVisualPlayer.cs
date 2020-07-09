@@ -23,7 +23,7 @@ namespace Windows.UI.Xaml.Controls
 			"PlaybackRate", typeof(double), typeof(AnimatedVisualPlayer), new FrameworkPropertyMetadata(1.0, UpdateSourceOnChanged));
 
 		public static readonly DependencyProperty FallbackContentProperty = DependencyProperty.Register(
-			"FallbackContent", typeof(DataTemplate), typeof(AnimatedVisualPlayer), new FrameworkPropertyMetadata(null, UpdateSourceOnChanged));
+			"FallbackContent", typeof(DataTemplate), typeof(AnimatedVisualPlayer), new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.ValueDoesNotInheritDataContext, UpdateSourceOnChanged));
 
 		public static readonly DependencyProperty SourceProperty = DependencyProperty.Register(
 			"Source", typeof(IAnimatedVisualSource), typeof(AnimatedVisualPlayer), new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.AffectsArrange, UpdateSourceOnChanged));

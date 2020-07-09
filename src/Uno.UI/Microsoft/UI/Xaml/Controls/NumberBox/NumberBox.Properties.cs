@@ -99,7 +99,7 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 
 		public static readonly DependencyProperty HeaderTemplateProperty =
-			DependencyProperty.Register("HeaderTemplate", typeof(DataTemplate), typeof(NumberBox), new FrameworkPropertyMetadata(null));
+			DependencyProperty.Register("HeaderTemplate", typeof(DataTemplate), typeof(NumberBox), new FrameworkPropertyMetadata(null, options: FrameworkPropertyMetadataOptions.ValueDoesNotInheritDataContext));
 
 		public string PlaceholderText
 		{
